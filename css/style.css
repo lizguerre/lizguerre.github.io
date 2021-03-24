@@ -1,0 +1,187 @@
+body{
+  margin: 0;
+  padding: 20px;
+  font-size: 14pt;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  color: solid black;
+}
+
+header{
+  background: #fff;
+  border-bottom: 1px solid #C39B77;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* min-height: 40px; */
+}
+
+.navlinks {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.facts{
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.overview {
+  margin: 12px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 0 0 50px 0;
+  flex-basis: 400px;
+}
+
+.overview > header {
+  background: #fff;
+  padding: 10px 0;
+  border-radius: 7px 7px 0 0;
+}
+
+.beverages {
+  min-height: 600px;
+  display: flex;
+}
+
+/* figure {
+  border: 1 px #C39B77 solid;
+  margin: auto;
+  padding: 5px;
+}
+
+/* code below taken from w3 schools */
+/* figcaption {
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-content: center;
+  flex-wrap: wrap; */
+} */
+
+.beans {
+  padding-top: 40px;
+  font-style: bold purple;
+  line-height: 1;
+}
+
+.steps {
+  padding:10px;
+  text-align:left;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+#logo{
+  -webkit-animation-: logo_grow;
+  animation-name: logo_grow;
+  animation-duration: 15s;
+}
+
+
+
+
+/* CODE BELOW TAKEN FROM W3SCHOOLS PORTFOLIO GALLERY GUIDELINES */
+
+* {
+  box-sizing: border-box;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column (if you want) */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  width: 25%;
+}
+
+/* Clear floats after rows */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+
+
+@media screen and (min-width: 850px){
+
+  header{
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  nav {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+  }
+
+  /* .nav {
+    flex-basis: 230px;
+  }  */
+}
+
+/* @media (prefers-reduced-motion: reduce) {
+  #logo {
+    animation-name: none;
+    animation-duration: none;
+  }
+}
+
+
+@media print { 
+
+  body {
+      background-image: none;
+  }
+
+  nav {
+    width: 100%;
+  }
+
+  nav li{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+  }
+} */
+
