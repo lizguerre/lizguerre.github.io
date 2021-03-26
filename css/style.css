@@ -1,0 +1,218 @@
+body{
+  margin: 0;
+  padding: 20px;
+  font-size: 14pt;
+  font-family: 'Roboto', sans-serif;
+  text-align: center;
+  margin-bottom: 40px;
+  color: solid black;
+}
+
+header{
+  background: #fff;
+  border-bottom: 1px solid #C39B77;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlinks {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.facts{
+  min-height: 500px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.container{
+  display: grid;
+  /* Code below taken from Jo Franchetti on Medium */
+  grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  grid-template-rows: repeat(6, 1fr);
+  row-gap: 20px;
+}
+
+.brazil, .columbia, .vietnam, .indonesia, .ethiopia, .costa-rica{
+  grid-column: 3/span 3;
+}
+
+.brazil-image, .columbia-image, .vietnam-image, .indonesia-image, .ethiopia-image, .costa-rica-image{
+  grid-column: 1/span 6;
+  max-height: 400px;
+  overflow: hidden;
+}
+
+.brazil, .brazil-image{
+  grid-row: 1/span 1;
+}
+
+.columbia, .columbia-image{
+  grid-row: 2/span 1;
+}
+
+.vietnam, .vietnam-image{
+  grid-row: 3/span 1;
+}
+
+.indonesia, .indonesia-image{
+  grid-row: 4/span 1;
+}
+
+.ethiopia, .ethiopia-image{
+  grid-row: 5/span 1;
+}
+
+.costa-rica, .costa-rica-image{
+  grid-row: 6/span 1;
+}
+
+.text {
+  background-color: #d6c6b7;
+  border: 7px solid #301934;
+  border-radius: 10px;
+  padding: 30px;
+  align-self: center;
+}
+
+
+/* .overview {
+  margin: 12px;
+  background: #fff;
+  border-radius: 7px;
+  padding: 0 0 50px 0;
+  flex-basis: 400px;
+}
+
+.overview > header {
+  background: #fff;
+  padding: 10px 0;
+  border-radius: 7px 7px 0 0;
+} */
+
+/* .steps table {
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 1px solid #C39B77;
+}
+
+.colhead{
+  color: #FFFFFF;
+  min-width: 125px;
+  padding: 10px;
+  text-align: center;
+  vertical-align: middle;
+  text-transform: uppercase;
+}
+
+.rowhead{
+  border-top: 2px solid #C39B77;
+  border-right: 2px solid #C39B77;
+}
+
+td, th {
+  border-top: 2px solid #000000;
+  padding: 10px;
+  text-align:center;
+} */
+
+.beverages {
+  min-height: 600px;
+  display: flex;
+}
+
+/* figure {
+  border: 1 px #C39B77 solid;
+  margin: auto;
+  padding: 5px;
+}
+
+/* code below taken from w3 schools */
+/* figcaption {
+  display: flex;
+  margin-top: 1em;
+  margin-bottom: 1em;
+  margin-left: 40px;
+  margin-right: 40px;
+  justify-content: center;
+  flex-wrap: wrap; */
+
+
+.beans {
+  padding-top: 40px;
+  font-style: bold purple;
+  line-height: 1;
+}
+
+.steps {
+  padding:10px;
+  text-align:left;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+}
+
+
+.responsive {
+  max-width: 100%;
+  height: auto;
+}
+
+
+#logo{
+  -webkit-animation-: logo_grow;
+  animation-name: logo_grow;
+  animation-duration: 15s;
+}
+
+.row, .column {
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+@media screen and (min-width: 850px){
+
+  header{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+  }
+
+  .container > img {
+    width:100%;
+  }
+
+  nav {
+    display: flex;
+    align-items: stretch;
+    flex-direction: row;
+  }
+
+  .container{
+    display: grid;
+    grid-template-columns: 50px auto 50px auto 50px auto;
+    grid-template-rows: 400px 400px 400px 400px 400px 400px;
+  }
+
+  .brazil, .columbia, .vietnam, .indonesia, .ethiopia, .costa-rica{
+    grid-column: 5/span 2;
+  }
+
+  .brazil-image, .columbia-image, .vietnam-image, .indonesia-image, .ethiopia-image, .costa-rica-image{
+    grid-column: 4/span 2;
+  }
+}
+
+
+
+
